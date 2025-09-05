@@ -20,11 +20,19 @@ print("Average age of 4 people", average)
 
 num_one = 35
 num_two = 5
+num_one += num_two
 print("There are 7 different mathematical operators:")
-print("Addition(+)", num_one+num_two)
-print("Subtraction(-)", num_one-num_two)
-print("Multiplication(8)", num_one*num_two)
-print("Division(/)", round(num_one/num_two, 2)) # round(numnber to round, number of decimal places)
-print("Exponents(**)", num_one**num_two)
-print("Integer Division(//)", num_one//num_two)
-print("Modulo(%)", num_one%num_two)
+print("Addition(+)", num_one)
+num_one += num_two
+print("Subtraction(-)", num_one)
+num_one -= num_two
+print("Multiplication(8)", num_one)
+num_one *= num_two
+print("Division(/)", round(num_one, 2)) # round(numnber to round, number of decimal places)
+num_one /= num_two
+print("Exponents(**)", num_one)
+num_one **= num_two
+print("Integer Division(//)", num_one)
+num_one //= num_two
+print("Modulo(%)", num_one)
+num_one %= num_two
