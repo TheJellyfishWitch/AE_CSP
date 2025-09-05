@@ -9,7 +9,7 @@ apples= 12
 friends= 5
 print("Each friend gets", apples/friends, "apples!")
 
-    # Average age of a group of 4 people
+# Average age of a group of 4 people
 person_1 = 4   
 person_2 = 7
 person_3 = 8
