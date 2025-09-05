@@ -18,21 +18,21 @@ total_ages =  person_1 + person_2 + person_3 + person_4
 average = total_ages/4
 print("Average age of 4 people", average)
 
-num_one = 35
-num_two = 5
-num_one += num_two
+# Different mathematical operators
+num_one = int(input("Tell me a number:\n"))
+num_two = float(input("Tell me another number:\n"))
 print("There are 7 different mathematical operators:")
-print("Addition(+)", num_one)
 num_one += num_two
-print("Subtraction(-)", num_one)
+print("Addition(+)", num_one)
 num_one -= num_two
-print("Multiplication(8)", num_one)
+print("Subtraction(-)", num_one)
 num_one *= num_two
-print("Division(/)", round(num_one, 2)) # round(numnber to round, number of decimal places)
+print("Multiplication(8)", num_one)
 num_one /= num_two
-print("Exponents(**)", num_one)
+print("Division(/)", round(num_one, 2)) # round(numnber to round, number of decimal places)
 num_one **= num_two
-print("Integer Division(//)", num_one)
+print("Exponents(**)", num_one)
 num_one //= num_two
-print("Modulo(%)", num_one)
+print("Integer Division(//)", num_one)
 num_one %= num_two
+print("Modulo(%)", num_one)
