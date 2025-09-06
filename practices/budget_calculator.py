@@ -13,7 +13,7 @@ per_rent = rent/income*100
 per_util = utilities/income*100
 per_gro = groceries/income*100
 per_trans = transportaion/income*100
-total = income - (rent-utilities-groceries-transportaion)
+total = income - (rent - utilities - groceries - transportaion)
 
 print("Your rent is $", rent, "which is", per_rent, "% of your income!")
 print("Your rent is $", utilities, "which is", per_util, "% of your income!")
