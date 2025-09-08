@@ -1,4 +1,4 @@
-# 7th Expressions notes
+# AE 7th Expressions notes
 
 # Algorithm
 name = input("What's your name? \n")
