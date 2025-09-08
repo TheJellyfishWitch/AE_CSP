@@ -10,5 +10,5 @@ full_name = first_name + " " + last_name
 sentance = '               The quick brown fox jumps over the lazy dog.                          '
 print(sentance.strip())
 
-print("Welcome to my program", full_name, "!")
+print("Welcome to my program", full_name + "!")
 
