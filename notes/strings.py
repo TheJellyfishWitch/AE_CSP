@@ -13,3 +13,5 @@ print(sentance.strip())
 print("Welcome to my program", full_name + "!")
 
 # Sanitization and Stupid Proofing
+
+# Debugging is fixing code
