@@ -10,12 +10,10 @@ verb_ing_one = input("Enter verb ending in 'ing'\n")
 verb_ing_two = input("Enter verb ending in 'ing'\n")
 noun_four = input("Enter adjective\n")
 job_one = input("Enter job\n")
-adjective_three = input("Enter adjective\n")
+adjective_three = input("Enter emotion\n")
 adjective_four = input("Enter adjective\n")
 
 print("Generating Mad-Lib...")
-time.sleep(0.5)
-print("...")
 time.sleep(0.5)
 
 print("On Halloween, you get to go trick-or-treating!")
