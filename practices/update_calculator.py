@@ -2,27 +2,37 @@
 
 print("Welcome user this is your Financial Calculator")
 
-print("Please enter your monthly costs:")
+def get_input(prompt):
+    while True:
+        try:
+            value = float(input(prompt))
+            if value < 0:
+                print("Please enter a non-negative number.")
+                continue
+            return value
+        except ValueError:
+            print("Invalid input. Please enter a valid number.")
 
-def money(income):
-    income = int(input("Monthly Income\n"))
-    rent = int(input("Rent/Morgage\n"))
-    utilities = int(input("Utilities\n"))
-    groceries = int(input("Groceries\n"))
-    transportaion = int(input("Transportation\n"))
+# Function to calculate percentage of income
+def calculate_percentage(income, expense):
+    if income == 0:
+        return 0.0  # Avoid division by zero
+    return (expense / income) * 100
 
-    rent_per = round(rent/income*100,2)
-    util_per = round(utilities/income*100,2)
-    gro_per = round(groceries/income*100,2)
-    trans_per = round(transportaion/income*100,2)
-    total = income - (rent + utilities + groceries + transportaion)
+# Get user inputs
+income = get_input("Monthly Income\n")
+rent = get_input("Rent/Mortgage\n")
+utilities = get_input("Utilities\n")
+groceries = get_input("Groceries\n")
+transportation = get_input("Transportation\n")
 
+# Calculate total expenses
+total_expenses = rent + utilities + groceries + transportation
 
-
-print("Your rent is $", rent, "which is", per_rent, "% of your income!")
-print("Your rent is $", utilities, "which is", per_util, "% of your income!")
-print("Your rent is $", groceries, "which is", per_gro, "% of your income!")
-print("Your rent is $", transportaion, "which is", per_trans, "% of your income!")
-print("You have $", total, "of spending each month")
-
-money()
+# Calculate and display percentages
+print("\nExpense Breakdown as Percentage of Income:")
+print(f"Rent/Mortgage: {calculate_percentage(income, rent):.2f}%")
+print(f"Utilities: {calculate_percentage(income, utilities):.2f}%")
+print(f"Groceries: {calculate_percentage(income, groceries):.2f}%")
+print(f"Transportation: {calculate_percentage(income, transportation):.2f}%")
+print(f"Total Expenses: {calculate_percentage(income, total_expenses):.2f}%")
