@@ -1,18 +1,22 @@
 // AE 7th Variables Notes!
-#include <stdio.h>
+#include <stdio.h> // standard library
 
 int main(void){
-    int grade = 95; //4 bytes
-    float pi = 3.14; //4 bytes
-    double long_pi = 3.1415926357; //8 bytes
-    char letter_grade = 'A'; //1 byte
+    int grade; //4 bytes : d
+    const float pi = 3.14; //4 bytes : f
+    double long_pi = 3.1415926357; //8 bytes : if
+    char letter_grade; //1 byte : c
+// -> list of characters for a string : s
     char name[] = "Addie";
-    printf("%s did it!", name);
-    printf("You have a %d, in the class. That is an %c", grade, letter_grade);
+// user input
+    printf("What is your grade percentage as a whole number:\n");
+    scanf("%d", &grade);
+
+    printf("What is your letter grade:\n");
+    scanf(" %c", &letter_grade);
+
+    printf("%s did it!\n", name);
+    printf("You have a %d, in the class. That is an %c.\n", grade, letter_grade);
 
     return 0;
 }
-// s is for string
-// d is for digit
-// strings have to be surrounded by ""
-// single digits have to be surrounded by ''
