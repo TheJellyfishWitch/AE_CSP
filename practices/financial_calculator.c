@@ -26,7 +26,7 @@ int main(void) {
     int per_gro = (groceries * 100) / income;
     int per_trans = (transportation * 100) / income;
     int save = income / 10;
-    int per_save = 10;  // Fixed at 10%
+    int per_save = 10;
     int total = income - (rent + utilities + groceries + transportation) - save;
 
     printf("Your rent is $%d.00 and that is %d%% of your income.\n", rent, per_rent);
