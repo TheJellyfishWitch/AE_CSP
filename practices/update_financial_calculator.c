@@ -9,18 +9,19 @@ int input(char* name){
 }
 
 int percent(void){
-    return ()
+    int rent_percent = 
 }
 
 int main(void){
-
+    printf("Welcome user this is your Financial Calculator\n");
+    
     input("income");
-    input("rent");
+    int rent = input("rent");
     input("utility");
     input("groceries");
     input("transportation");
 
-  // printf("Welcome user this is your Financial Calculator\n");
+
 
     // int per_rent = (rent * 100) / income;
     // int per_util = (utilities * 100) / income;
