@@ -1,40 +1,34 @@
 // AE 7th Update Financial Calculator
 #include <stdio.h>
 
-int calculate_percent(income, expence){
-    if(income == 0){
-        return 0.0;
-    return (expence / income)* 100;
-    }
+int user_inputs(void){
+    int thing;
+    char name;
+
+    printf("What is your monthly %s: ", name);
+    scanf("%d", &thing);
+}
+
+int calculate_percent(income){
+    int income, rent, utilities, groceries, transportation;
+    int per_rent = (rent * 100) / income;
+    int per_util = (utilities * 100) / income;
+    int per_gro = (groceries * 100) / income;
+    int per_trans = (transportation * 100) / income;
+    int save = income / 10;
+    int per_save = 10;
+    int total = income - (rent + utilities + groceries + transportation) - save;
 }
 
 int main(void){
-    printf("Welcome user this is your Financial Calculator");
-    int income;
-    int rent;
-    int untilities;
-    int groceries;
-    int transport;
+    printf("Welcome user this is your Financial Calculator\n");
 
-    printf("Monthly Income\n");
-    scanf("%d", income);
-    printf("Rent/Morgage\n");
-    scanf("%d", rent);
-    printf("Utilities\n");
-    scanf("%d", untilities);
-    printf("Groceries\n");
-    scanf("%d", groceries);
-    printf("Transportation\n");
-    scanf("%d", transport);
-
-    int total_expences = rent + untilities + groceries + transport;
-
-    printf("Expense Breakbown as a Percentage of Income:\n");
-    printf("Rent/Morgage: %.2d %.2d %.2d%%", calculate_percent, income, rent);
-    printf("Utilities: %.2d %.2d %.2d%%", calculate_percent, income, untilities);
-    printf("Groceries: %.2d %.2d %.2d%%", calculate_percent, income, groceries);
-    printf("Transportation: %.2d %.2d %.2d%%", calculate_percent, income, transport);
-    printf("Total Expenses: %.2d %.2d %.2d%%", calculate_percent, income, total_expences);
+    printf("Your rent is $%d.00 and that is %d%% of your income.\n", rent, per_rent);
+    printf("Your utilities are $%d.00 and that is %d%% of your income.\n", utilities, per_util);
+    printf("Your groceries are $%d.00 and that is %d%% of your income.\n", groceries, per_gro);
+    printf("Your transportation is $%d.00 and that is %d%% of your income.\n", transportation, per_trans);
+    printf("You should save $%d.00 a month, that is %d%% of your income.\n", save, per_save);
+    printf("You have $%d.00 of spending money each month!\n", total);
 
     return 0;
 }
