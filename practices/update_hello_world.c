@@ -2,13 +2,15 @@
 #include <stdio.h>
 
 char welcome(char* name){
-    printf("Hello %s!", name);
-    scanf("%s", &name);
+    printf("Hello %s", name);
 }
 
 int main(void){
-    welcome("Alexa");
-    welcome("Bob");
+    welcome("Alexa\n");
+    welcome("Bob\n");
+    welcome("Jerry\n");
+    welcome("George\n");
+    welcome("JEFF\n");
 
     return 0;
 }
